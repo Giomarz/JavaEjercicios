@@ -76,11 +76,29 @@ public class Operaciones2 {
 //        System.out.println("El resultado de la suma de los 4  numeros es: " +Suma2);
 //        System.out.println("El resultado de la multiplicacion de los 4  numeros es: " +Multiplicacion2);
 
-          Integer Numero6;
-          Integer Numero7;
-          Integer Numero8;
-          Integer Numero9;
-          Integer Suma2;
+          /* Se debe desarrollar un programa que pida el ingreso del precio de un articulo y la cantidad que se lleva el cliente.
+          * Mostrar lo que debe abonar el comprador (Ingresar por teclado un precio sin decimales)
+          *, es decir un entero: 2, 7, 90, etc.)*
+*/
+          Integer Numero10;
+          Integer Cantidad;
+          Integer Multiplicacion;
+          Integer Abono;
+          Integer Final;
+          Integer NoAbono;
+          
+          System.out.println("Ingrese el precio del articulo");
+          Numero10 = Escribir.nextInt();
+          System.out.println("Cantidad que se lleva");
+          Cantidad = Escribir.nextInt();
+          Multiplicacion = Numero10 * Cantidad;
+          System.out.println("Precio total de cantidad de articulos: " +Multiplicacion);
+          System.out.println("Cuanto desea abonar?");
+          Abono = Escribir.nextInt();
+          Final = Multiplicacion - Abono;
+          NoAbono = Multiplicacion - Final;
+          
+          System.out.println("Usted ha abonado un total de: " +NoAbono+ ", le queda por pagar un total de: " +Final);
           
           
     }
