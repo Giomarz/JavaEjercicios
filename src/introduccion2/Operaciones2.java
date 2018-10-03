@@ -104,7 +104,5 @@ public class Operaciones2 {
           Queda = Multiplicacion3 - Abono;
           
           System.out.println("Usted ha abonado un total de: " +Abono+ ", le queda por pagar un total de: " +Queda);
-          
-          
     }
 }
