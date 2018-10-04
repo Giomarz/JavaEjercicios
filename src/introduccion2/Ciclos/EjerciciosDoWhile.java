@@ -104,8 +104,9 @@ public class EjerciciosDoWhile {
         while (contador4<numegresos);
         
         JOptionPane.showMessageDialog(null, "Dinero que aun queda en la caja: " +caja);
-        
-        /*Extras lsadksadklkñslda
+//        
+        /*---------------------------------------------------------------------------------------------------------------------
+        PROBANDO OTROS CODIGOS
         1. hacer un programa que clasifique 400 personas segun el deporte que practica
         Los deportes son: ajedrez, atletismo, baloncesto, futbol, gimnasia, karate, natacion
         tiro y voleibol*/
