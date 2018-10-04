@@ -99,7 +99,9 @@ public class EjerciciosWhile {
             JOptionPane.showMessageDialog(null, "Salario correspondiente:! " +salario);
         }
         
-        /* 5. Determinar si un numero es primo o no. recuerde que un numero primo es aquel cuyo
+        /* --------------------------------------------------------------------------------------------------------------------
+        PROBRANDO OTROS CODIGOS
+        5. Determinar si un numero es primo o no. recuerde que un numero primo es aquel cuyo
         residuo de la division es 0 unicamente si se divide entre 1 y el mismo, en otro caso no.*/
         
 //        Integer contador5, veces, numero4;
