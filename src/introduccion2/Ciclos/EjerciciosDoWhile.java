@@ -27,17 +27,14 @@ public class EjerciciosDoWhile {
         
         do {
             contador++;
-            
             precio = Integer.parseInt(JOptionPane.showInputDialog("Camisa #"+contador+ "\n Precio de camisa en dolares:"));
-            suma = suma+precio;
-            
+            suma = suma+precio;   
         }
+        
         while (contador<5); 
         pesos = suma * 3000;
         JOptionPane.showMessageDialog(null, "Precio de camisas en dolares: $" +suma+ "\n Equivalencia de peso a dolar: $1 USD = $3000 COP \n Precio de camisas convertidos a pesos: $" +pesos);
         
-        
-
         /* 2. Se pretende leer todos los empleados de una empresa situados en un archivo y a la
         terminacion de la lectura del archivo se debe visualizar un mensaje que muestre 
         el numero de trabajadores que ganan mas de 2.500.000*/
@@ -58,9 +55,7 @@ public class EjerciciosDoWhile {
             }
         } 
         while (contador2<NumEmpleados);
-        
         JOptionPane.showMessageDialog(null, "De " +NumEmpleados+ " trabajadores, " +EmpMasDinero+ " ganan mas de 2.500.000");
-        
         
         /* 3. Leidos 200 numeros de teclado, se desea conocer cuales son multiplos de
         2, de 3 y de 5*/
@@ -94,7 +89,21 @@ public class EjerciciosDoWhile {
         egresos (en numeros positivos). Calcular los egresos de la compañia y mostrar cuanto queda en la caja
         El programa termina cuando se ingresa un egreso imaginario de 0*/
         
+        Integer contador4, numegresos, egresos, caja;
         
+        contador4 = 0;
+        caja = 500000;
+        
+        numegresos = Integer.parseInt(JOptionPane.showInputDialog("cuantos egresos va a realizar?"));
+        
+        do {
+            contador4++;
+            egresos = Integer.parseInt(JOptionPane.showInputDialog("Valor egreso #" +contador4));
+            caja = caja - egresos;  
+        }
+        while (contador4<numegresos);
+        
+        JOptionPane.showMessageDialog(null, "Dinero que aun queda en la caja: " +caja);
         
         /*Extras lsadksadklkñslda
         1. hacer un programa que clasifique 400 personas segun el deporte que practica
