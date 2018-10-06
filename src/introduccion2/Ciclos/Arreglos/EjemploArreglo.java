@@ -28,5 +28,34 @@ public class EjemploArreglo {
             JOptionPane.showMessageDialog(null, "la edad #" +i+ " es " +edades[i]);
         }
         
+        /*ejemplo arreglo que guarda el numero de posiciones que la persona quiera,
+        ademas ingresa en cada posicion una edad, y a partir de ella, determinar cuantas de esas edades
+        ingresadas, son mayores y menoores de edad*/
+        
+        Integer TamanoArreglo, Edades2[], Mayores, Menores, i2;
+        Integer auxiliar; //almacena el valor de edades
+        
+        TamanoArreglo = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el tamaño del arreglo"));
+        
+        Edades2 = new Integer[TamanoArreglo];
+        
+        for (i2 = 0; i2 < Edades2.length; i2++) {
+            Edades2[i2] = Integer.parseInt(JOptionPane.showInputDialog("Digite la edad #" +i2));
+            
+        }
+        
+        Mayores  = 0;
+        Menores  = 0;
+        
+        for (i2 = 0; i2 < Edades2.length; i2++) {
+            if (Edades2[i2]>=18) {
+                Mayores++;
+            } else {
+                Menores++;
+            }
+        }
+        JOptionPane.showMessageDialog(null, "Cantidad de mayores: " +Mayores+ "\n"
+                + "Cantidad de menores: " +Menores);
     }
+    
 }
