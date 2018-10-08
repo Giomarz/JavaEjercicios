@@ -40,8 +40,9 @@ public class EjerciciosArreglos {
             arreglo2[i2] = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el valor #" +i2));
             suma = suma + arreglo2[i2];
         }
-        
-        JOptionPane.showMessageDialog(null, "La suma de los numeros ingresados en el arreglo es: " +suma);
+//        
+//        JOptionPane.showMessageDialog(null, "La suma de los numeros ingresados en el arreglo es: " +suma);
+//        
         
         /* 3. Mostrar los dias de la semana en un arreglo*/
         
@@ -63,15 +64,15 @@ public class EjerciciosArreglos {
 
          /*---------ALTERNATIVA Punto 3.-------------------*/
          
-//         Integer i4;
+//         Integer i33;
 //         String DiasSemana2[], DiasSemanaIn;
 //         DiasSemana2 = new String[7];
 //         
-//         for (i4 = 0; i4 < DiasSemana2.length; i4++) {
-//            DiasSemana2[DiasSemanaIn] = JOptionPane.showMessageDialog(null, "Ingrese el dia de la semana #" +i4);
+//         for (i33 = 0; i33 < DiasSemana2.length; i33++) {
+//            DiasSemana2[DiasSemanaIn] = JOptionPane.showMessageDialog(null, "Ingrese el dia de la semana #" +i33);
 //        }
 //         
-//         for (int i4 = 0; i4 < 10; i++) {
+//         for (int i33 = 0; i33 < DiasSemana2.length; i33++) {
 //            
 //        }
                                  
@@ -80,8 +81,26 @@ public class EjerciciosArreglos {
         /* 4. Escribir un algoritmo que lea dos arreglos de numeros enteros ordenados
         ascendentemente y luego produzca la lista ordenada de la mezcla de los dos
         Por ejemplo, si los dos arreglos tienen los numeros 1, 3, 6, 9, 17, y 2, 4, 10, 17,
-        respectivamente, la liste de numeros en la pantalla debe ser 1, 2, 3, 4, 6, 9, 10, 17, 17*/
-        /*IDK THIS*/
+        respectivamente, la lista de numeros en la pantalla debe ser 1, 2, 3, 4, 6, 9, 10, 17, 17*/
+        
+        Integer ordenar[],tamanoO, ordenar2[], tamanoO2, i4, i44;
+        
+        tamanoO = Integer.parseInt(JOptionPane.showInputDialog("Tamaño del arreglo de numeros"));
+        ordenar = new Integer[tamanoO];
+        
+        for (i4 = 0; i4 < ordenar.length; i4++) {
+            ordenar[i4] = Integer.parseInt(JOptionPane.showInputDialog("numero #" +i4));
+        }
+        
+        tamanoO2 = Integer.parseInt(JOptionPane.showInputDialog("Tamaño del arreglo de numeros 2"));
+        ordenar2 = new Integer[tamanoO2];
+        
+        for (i44 = 0; i44 < ordenar2.length; i44++) {
+            ordenar2[i44] = Integer.parseInt(JOptionPane.showInputDialog("numero #" +i44));
+        }
+        
+        
+        /*IDK HOW FINISH IT ;C */
         
         /* 5. Defina un arreglo de 10 enteros. Luego pida al usuario los valores numericos (no mas de 10)*/
         
@@ -103,6 +122,20 @@ public class EjerciciosArreglos {
         a. generar un vector que contenga el ingreso acumulado de los sueldos en los 5 meses
         por cada empleado.
         b. mostrar por pantalla el total en sueldos a todos los empleados en los 5 meses*/
+        
+        Integer Sueldo[]; 
+        Integer i6;
+        
+        Sueldo = new Integer[5];
+        
+        for (i6 = 0; i6 < Sueldo.length; i6++) {
+            Sueldo[i6] = Integer.parseInt(JOptionPane.showInputDialog("Digite el ingreso acumulado del empleado #" +i6));
+            
+        }
+        
+        for (i6 = 0; i6 < Sueldo.length; i6++) {
+            JOptionPane.showMessageDialog(null, "Los sueldos de los empleados son: empleado #"+i6+ ": " +Sueldo[i6]);
+        }
         
     }
 }
